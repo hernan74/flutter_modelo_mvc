@@ -22,7 +22,7 @@ void main() {
       localidadDataImpl = new LocalidadDataImpl(databaseMock);
     });
 
-    test('a', () async {
+    test('Prueba servicio', () async {
       Map<String, dynamic> resp;
 
       when(() => localidadDBMock.buscarById(where: 'Id=', whereArgs: [1]))

@@ -39,7 +39,8 @@ class HomeView extends StatelessWidget {
                             onTap: () => context.read<PersonaBloc>().add(
                                 OnObtienePersona(state.lstPersonas[index].id)),
                             child: ListTile(
-                              title: Text(state.lstPersonas[index].nombre),
+                              title: Text(
+                                  '${state.lstPersonas[index].nombre} ${state.lstPersonas[index]?.idLocalidad ?? ''}'),
                               subtitle: Text(
                                   '${state.lstPersonas[index]?.edad ?? ''}'),
                             ),
